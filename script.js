@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function (){
     const form = document.getElementById('registration-form');
-    const feedBackDiv = document.getElementById('form-feedback');
+    const feedbackDiv = document.getElementById('form-feedback');
    
     
 
@@ -29,13 +29,13 @@ document.addEventListener('DOMContentLoaded', function (){
             isValid = false;
         }
     
-            feedBackDiv.style.display = 'block';
+            feedbackDiv.style.display = 'block';
         if (isValid=== true) {
-            feedBackDiv.textContent = 'Registration successful!';
-            feedBackDiv.style.color = "#28a745";
+            feedbackDiv.textContent = 'Registration successful!';
+            feedbackDiv.style.color = "#28a745";
         } else {
-            feedBackDiv.innerHTML = messages.join('<br>');
-            feedBackDiv.style.color = "#dc3545";
+            feedbackDiv.innerHTML = messages.join('<br>');
+            feedbackDiv.style.color = "#dc3545";
         }
         
     
